@@ -1,4 +1,4 @@
-import SampleController from '../app/SampleController';
+import SampleController from '../../app/sample/SampleController';
 
 const subject = SampleController();
 

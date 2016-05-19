@@ -1,7 +1,7 @@
-describe('sample', function() {
-  it('displays a greeting', function() {
+describe('sample', () => {
+  it('displays a greeting', () => {
     browser.get('http://localhost:63342/angular-es6/app/index.html');
-    var text = element(by.css('p')).getText();
+    const text = element(by.css('p')).getText();
     expect(text).toEqual('Hello everybody or some such string.');
   });
 });

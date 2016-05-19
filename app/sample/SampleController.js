@@ -1,3 +1,5 @@
-export default () => ({
-  getText: () => 'Hello everybody or some such string.',
-});
+export default class SampleController {
+  constructor() {
+    this.getText = () => 'Hello everybody or some such string.';
+  }
+}

@@ -5,3 +5,5 @@ env:
   browser: true
   jasmine: true
   protractor: true
+globals:
+  angular: true

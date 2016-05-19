@@ -1,0 +1,9 @@
+# IntelliJ nonsense
+.idea
+*.iml
+
+# NPM nonsense
+node_modules
+
+# Bundle
+app/bundle.js

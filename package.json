@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack",
-    "jasmine": "jasmine"
+    "jasmine": "jasmine",
+    "webdriver": "webdriver-manager start",
+    "protractor": "protractor protractor.conf.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +25,7 @@
     "eslint-plugin-jsx-a11y": "^1.2.0",
     "eslint-plugin-react": "^5.1.1",
     "jasmine-es6": "^0.1.10",
+    "protractor": "^3.3.0",
     "webpack": "^1.13.0"
   }
 }

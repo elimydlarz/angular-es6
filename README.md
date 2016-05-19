@@ -9,7 +9,11 @@ npm webpack
 
 ## Testing
 
-*shrug*
+```
+npm run jasmine
+npm run webdriver
+npm run protractor
+```
 
 ## Running
 

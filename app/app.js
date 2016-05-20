@@ -1,6 +1,6 @@
-import sampleController from './sample/SampleController';
+import SampleController from './sample/SampleController';
 
 const app = angular.module('app', [])
-    .controller('sampleController', sampleController);
+    .controller('sampleController', SampleController);
 
 export default app;

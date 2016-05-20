@@ -1,5 +1,5 @@
 export default class EngineClient {
-  constructor() {
-    this.getApplication = () => ({ name: 'Bird Person' });
+  getApplication() {
+    return { name: 'Bird Person' };
   }
 }

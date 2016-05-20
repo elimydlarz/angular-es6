@@ -4,23 +4,17 @@
 
 ```
 npm install
-npm webpack
+npm run build
 ```
 
 ## Testing
 
 ```
-npm run jasmine
-npm run webdriver
-npm run protractor
+npm test
 ```
 
 ## Running
 
 ```
-open app/index.html
+npm start
 ```
-
-## Deploying
-
-Best avoided.

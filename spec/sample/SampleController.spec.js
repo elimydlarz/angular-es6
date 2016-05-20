@@ -1,9 +1,22 @@
-import SampleController from '../../app/sample/SampleController';
-
-const subject = new SampleController();
+import sampleController from '../../app/sample/SampleController';
+import * as engineClient from '../../app/services/EngineClient';
 
 describe('SampleController', () => {
-  it('getText returns a greeting', () => {
-    expect(subject.getText()).toBe('Hello everybody or some such string.');
+  const applicationId = 'APPLICATION ID';
+  const application = {
+    name: 'Kateryna',
+  };
+  let clientGetApplication;
+
+  beforeEach(() => {
+    clientGetApplication = jasmine.createSpy('client getApplication').and.returnValue(application);
+    spyOn(engineClient, 'default').and.returnValue({
+      getApplication: clientGetApplication,
+    });
+  });
+
+  it('getApplication returns an application', () => {
+    expect(sampleController().getApplication(applicationId)).toBe(application);
+    expect(clientGetApplication).toHaveBeenCalledWith(applicationId);
   });
 });

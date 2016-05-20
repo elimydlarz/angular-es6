@@ -1,7 +1,3 @@
-import unirest from '../../node_modules/unirest';
-
-export default class EngineClient {
-  constructor() {
-    this.getApplication = (applicationId) => unirest.get(applicationId);
-  }
-}
+export default () => ({
+  getApplication: () => ({ name: 'Bird Person' }),
+});

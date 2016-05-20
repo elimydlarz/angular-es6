@@ -7,6 +7,7 @@
     "build": "webpack",
     "test": "jasmine && protractor protractor.conf.js",
     "test:unit": "jasmine",
+    "webdriver": "webdriver-manager start",
     "test:ui": "protractor protractor.conf.js",
     "start": "http-server"
   },

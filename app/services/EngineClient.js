@@ -1,3 +1,5 @@
-export default () => ({
-  getApplication: () => ({ name: 'Bird Person' }),
-});
+export default class EngineClient {
+  constructor() {
+    this.getApplication = () => ({ name: 'Bird Person' });
+  }
+}

@@ -1,6 +1,8 @@
-import engineClient from '../services/EngineClient';
+import EngineClient from '../services/EngineClient';
 
-export default () => ({
-  getApplication: (applicationId) => engineClient().getApplication(applicationId),
-  getText: () => 'Hello everybody or some such string.',
-});
+export default class SampleController {
+  constructor() {
+    this.getApplication = (applicationId) => new EngineClient().getApplication(applicationId);
+    this.getText = () => 'Hello everybody or some such string.';
+  }
+}

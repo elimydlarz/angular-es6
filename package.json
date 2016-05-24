@@ -5,10 +5,7 @@
   "main": "bundle.js",
   "scripts": {
     "build": "webpack",
-    "test": "jasmine && protractor protractor.conf.js",
-    "test:unit": "jasmine",
-    "webdriver": "webdriver-manager start",
-    "test:ui": "protractor protractor.conf.js",
+    "test": "jasmine",
     "start": "http-server"
   },
   "author": "",
@@ -27,7 +24,6 @@
     "eslint-plugin-react": "^5.1.1",
     "http-server": "^0.9.0",
     "jasmine-es6": "^0.1.10",
-    "protractor": "^3.3.0",
     "webpack": "^1.13.0"
   }
 }

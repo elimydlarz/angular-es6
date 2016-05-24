@@ -1,4 +1,4 @@
-import EngineClient from '../../app/services/EngineClient';
+import EngineClient from '../../../app/services/EngineClient';
 
 describe('Engine', () => {
   const applicationId = 'APPLICATION ID';

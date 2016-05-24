@@ -18,15 +18,9 @@ npm run test:unit
 ### UI
 
 ```
-npm run webdriver
+npm start
+npm run driver
 npm run test:ui
-```
-
-### All
-
-```
-npm run webdriver
-npm test
 ```
 
 ## Running

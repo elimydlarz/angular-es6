@@ -1,5 +1,5 @@
-import SampleController from '../../app/sample/SampleController';
-import * as EngineClient from '../../app/services/EngineClient';
+import SampleController from '../../../app/sample/SampleController';
+import * as EngineClient from '../../../app/services/EngineClient';
 
 describe('SampleController', () => {
   describe('getApplication', () => {

@@ -5,8 +5,10 @@
   "main": "bundle.js",
   "scripts": {
     "build": "webpack",
-    "test": "jasmine",
-    "start": "http-server"
+    "test:unit": "jasmine",
+    "start": "http-server",
+    "driver": "selenium-standalone start",
+    "test:ui": "wdio wdio.conf.js"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +26,9 @@
     "eslint-plugin-react": "^5.1.1",
     "http-server": "^0.9.0",
     "jasmine-es6": "^0.1.10",
+    "selenium-standalone": "^5.1.0",
+    "wdio-jasmine-framework": "^0.1.9",
+    "webdriverio": "^4.0.7",
     "webpack": "^1.13.0"
   }
 }
